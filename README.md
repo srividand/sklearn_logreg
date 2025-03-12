@@ -6,9 +6,9 @@ Firstly, I imported the data using read.csv and printed the basic stats of the v
 
 There are two dependent variables and all are independent variables. So, using matplotlib I printed the histogram of all the independant variables.
 
-And I split the data into 70% training and 30% testing data, and performed logistic regression for both training and testing data and I performed the metric AUC and its 0.82.
+And I split the data into 70% training and 30% testing data by using train_test_split from sklearn.model_selection, and performed logistic regression for both training and testing data from sklearn.linear_model and I performed the metric AUC by importing roc_curve, aoc, roc_auc_score from skleran_metrics and the auc score is 0.82.
 
-Then, I did another classification using SVM algorithm. I used SVC function and tuned hypermeter from 0.1 to 1.0 using forloop and did the validation metric and AUC. The AUC is 0.87.
+Then, I did another classification using SVM algorithm. I split the data into 70% training data and 30% testing data using train_test_split from sklearn.model_selection. I used SVC function from sklearn.svm and tuned hypermeter from 0.1 to 1.0 using forloop and did the validation metric and AUC by importing roc_curve, aoc, roc_auc_score from skleran_metrics. The AUC score is 0.87.
 
 The AUC score when C =1 is 0.87, which is greater than any c value. So, C = 1 value gives the optimal SVM classifier with respect to AUC.
 
